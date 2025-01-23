@@ -1,0 +1,53 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+mat-toolbar div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation-items li {
+  margin-right: 20px;
+}
+
+.navigation-items li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navigation-items li a:hover {
+  color: #ff4081;
+}
+
+.navigation-items li[style*="float: right"] {
+  margin-left: auto;
+}
+
+.navigation-items li:last-child {
+  border-right: none;
+}
+
+.navigation-items li:first-child {
+  border-left: none;
+}
